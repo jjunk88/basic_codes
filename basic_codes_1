@@ -1,0 +1,9 @@
+#!/usr/bin/Rcripts
+
+#### function for counting duplicates between two list
+
+cnt_dup <- function(x,y) {
+  merged_list <- c(x,y)
+  dup_cnt <- length(merged_list) - length(unique(merged_list))
+  return(dup_cnt)
+}
